@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Ayacoo\Bitset\:
+    resource: '../Classes/*'
+
+
+  Ayacoo\Bitset\Controller\FrontendController:
+    arguments: ['@TYPO3\CMS\Core\Domain\Repository\PageRepository']
+    public: true
