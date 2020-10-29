@@ -13,7 +13,7 @@ class Weekday extends \TYPO3\CMS\Core\Type\BitSet
     public const THURSDAY = 0b10000; // 16
     public const FRIDAY = 0b100000; // 32
     public const SATURDAY = 0b1000000; // 64
-    public const ALL = 0b1; // 127
+    public const ALL = 0b1111111; // 127
 
     /**
      * @param int $weekday
